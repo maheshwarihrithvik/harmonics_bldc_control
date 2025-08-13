@@ -55,7 +55,7 @@ class CANInterface:
         self.initialize()
 
     def initialize(self):
-        can_dll_name = "/libcontrolcan.so"
+        can_dll_name = "/home/hrithvik/lib/libcontrolcan.so"
 
         self.canDLL = cdll.LoadLibrary(can_dll_name)
         print(f"Loading CAN library: {can_dll_name}")
