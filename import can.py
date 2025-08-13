@@ -55,8 +55,7 @@ class CANInterface:
         self.initialize()
 
     def initialize(self):
-        # can_dll_name = '/home/saurabh/ros_ws/spaceo_pro/rospy/libcontrolcan.so'
-        can_dll_name = "/home/saurabh/Downloads/joint_control/lib/libcontrolcan.so"
+        can_dll_name = "/libcontrolcan.so"
 
         self.canDLL = cdll.LoadLibrary(can_dll_name)
         print(f"Loading CAN library: {can_dll_name}")
